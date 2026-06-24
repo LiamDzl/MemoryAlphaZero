@@ -204,8 +204,9 @@ def load_dataset():
     U = torch.tensor(dataset["MCTS Values"]).float() 
     V = torch.tensor(dataset["CNN Embeddings"]).float() 
     W = torch.tensor(dataset["Expected CNN Child Embeddings"]).float()
+    Y_Hat = torch.tensor(dataset["NN Priors"]).float()
     
-    return X, Y, U, V, W
+    return X, Y, U, V, W, Y_Hat
 
 def dirichlet_smooth(p, alpha=1e-6):
     p = p + alpha
