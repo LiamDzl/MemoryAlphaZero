@@ -115,7 +115,7 @@ def bar_matrix_emoji(dist, height, colour):
 
 def alphazero_display(policy_name, state, tree_dist, tree_value, neural_dist, neural_value, agent_move, noise):
     print("")
-    print("+ ------------ AlphaZero UI ------------- +")
+    print("+------------ AlphaZero UI -------------+")
     print("")
     print(f"<state>:")
     print("")
